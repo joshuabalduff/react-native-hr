@@ -9,12 +9,25 @@ It also brings some extra functionality:
     <li>Changing line style.</li>
   </ul>
 
+## Installation
+
+```bash
+npm install react-native-hr
+```
+
+or
+
+```bash
+yarn add react-native-hr
+```
+
 ## Compatibility
 
 This package has been updated to work with modern React Native versions:
 - React >= 16.8.0
 - React Native >= 0.60.0
 - Uses Babel 7 and modern JavaScript tooling
+- Automated releases with release-please
 
 ## Props
 <table>
@@ -104,4 +117,4 @@ This package has been updated to work with modern React Native versions:
 ```
 
 
-[![Imgur](https://github.com/priyesh9875/react-native-hr/blob/master/Screenshot_1483257401.png)
+[![Screenshot](Screenshot_1483257401.png)
