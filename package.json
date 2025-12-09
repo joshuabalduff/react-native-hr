@@ -17,10 +17,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Riglerr/react-native-hr.git"
+    "url": "git+https://github.com/joshuabalduff/react-native-hr.git"
   },
   "bugs": {
-    "url": "https://github.com/Riglerr/react-native-hr/issues"
+    "url": "https://github.com/joshuabalduff/react-native-hr/issues"
   },
   "keywords": [
     "react-native",
