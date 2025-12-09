@@ -1,19 +1,19 @@
 const gulp = require('gulp');
-var babel = require('gulp-babel');
-var rename = require('gulp-rename');
+const babel = require('gulp-babel');
+const rename = require('gulp-rename');
 
-gulp.task('default', ['build', 'watch'])
+function build() {
+  return gulp.src('src/index.js')
+    .pipe(babel())
+    .pipe(gulp.dest('dist'))
+    .pipe(rename('hr.dist.js'))
+    .pipe(gulp.dest('examples'));
+}
 
-gulp.task('build', () =>
-  gulp.src('src/index.js')
-  .pipe(babel({
-    presets: ['es2015', 'react']
-  }))
-  .pipe(gulp.dest('dist'))
-  .pipe(rename('hr.dist.js'))
-  .pipe(gulp.dest('examples'))
-)
+function watch() {
+  gulp.watch('src/index.js', build);
+}
 
-gulp.task('watch', () => {
-  gulp.watch('src/index.js', ['build'])
-})
+exports.build = build;
+exports.watch = watch;
+exports.default = gulp.series(build, watch);
