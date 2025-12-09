@@ -7,9 +7,9 @@
     "example": "examples"
   },
   "scripts": {
-    "build": "babel src/index.js --out-file examples/hr.dist.js --presets es2015,react",
+    "build": "babel src/index.js --out-file examples/hr.dist.js --presets @babel/preset-env,@babel/preset-react",
     "start": "gulp",
-    "watch": "babel src --out-dir dist --watch --presets es2015,react"
+    "watch": "babel src --out-dir dist --watch --presets @babel/preset-env,@babel/preset-react"
   },
   "files": [
     "dist/index.js"
@@ -32,12 +32,17 @@
   ],
   "author": "Robert Rigler",
   "license": "ISC",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-native": ">=0.60.0"
+  },
   "devDependencies": {
-    "babel-cli": "^6.11.4",
-    "babel-preset-es2015": "^6.9.0",
-    "babel-preset-react": "^6.11.1",
-    "gulp": "^3.9.1",
-    "gulp-babel": "^6.1.2",
-    "gulp-rename": "^1.2.2"
+    "@babel/cli": "^7.24.0",
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.24.0",
+    "gulp": "^5.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-rename": "^2.0.0"
   }
 }
