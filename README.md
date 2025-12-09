@@ -9,6 +9,13 @@ It also brings some extra functionality:
     <li>Changing line style.</li>
   </ul>
 
+## Compatibility
+
+This package has been updated to work with modern React Native versions:
+- React >= 16.8.0
+- React Native >= 0.60.0
+- Uses Babel 7 and modern JavaScript tooling
+
 ## Props
 <table>
   <th>
